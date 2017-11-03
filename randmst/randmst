@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#	NOTE: this script should be placed in the home directory that you submit for the problem set
+#	It must be made executable and saved without an extension to be run as required for CS 124
+
+#	make sure you have 4 command line args
+if [ $# -eq 4 ]
+then
+    java -jar RandMST.jar "$1" "$2" "$3" "$4"
+else
+	#	else display error
+    echo "Error: command line must be of the below form..."
+    echo "./randmst 0 numpoints numtrials dimension"
+fi
